@@ -33,15 +33,18 @@ class Usuario {
         }
 }
 
-const libros =[
-    {nombre: 'El Hobbit',autor: 'J.R.R.Tolkien'}, 
-    {nombre: 'La Isla del Tesoro', autor: 'Robert Louis Stevenson'}]
 
-    const usuario1 = new Usuario ('Pedro','Martinez',libros,
+
+    const usuario1 = new Usuario ('Pedro','Martinez',[
+        {nombre: 'El Hobbit',autor: 'J.R.R.Tolkien'}, 
+        {nombre: 'La Isla del Tesoro', autor: 'Robert Louis Stevenson'}],
         ['perro', 'gato', 'hamster']
         );
 
 
         usuario1.getFullName;
+        usuario1.addBook;
+        usuario1.addMascota('canario');
+        usuario1.getBookNames;
 
 
